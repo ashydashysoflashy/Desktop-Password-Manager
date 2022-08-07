@@ -8,7 +8,7 @@
 
 <VBox prefHeight="251.0" prefWidth="272.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PasswordManagerController">
    <children>
-      <Label prefHeight="35.0" prefWidth="272.0" text="Test Text" textAlignment="CENTER" textFill="#dd3131" />
+      <Label prefHeight="35.0" prefWidth="272.0" text="Test Text" textAlignment="CENTER" textFill="#5b32db" />
       <Button mnemonicParsing="false" text="Test Button" />
    </children>
 </VBox>
