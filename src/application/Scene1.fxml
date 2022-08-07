@@ -10,5 +10,6 @@
    <children>
       <Label prefHeight="35.0" prefWidth="272.0" text="Test Text" textAlignment="CENTER" textFill="#5b32db" />
       <Button mnemonicParsing="false" text="Test Button" />
+      <Label prefHeight="35.0" prefWidth="272.0" text="Achraf Branch Merge" textAlignment="CENTER" textFill="#5b32db" />
    </children>
 </VBox>
