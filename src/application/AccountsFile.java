@@ -64,9 +64,8 @@ public class AccountsFile {
 		 
 		//Account toAdd =  new Account( "Google", "user123", "asdasd");
 		//file.addAccount(toAdd);
-		file.removeAccount("8a3d8e74-8196-4f44-ae1a-2789055a02af");
-
-		 
+		 Account randomPass = new Account("TikTok", "cutekitty321", 8);
+		 file.addAccount(randomPass);
 		
 		 file.writeFile();
 	
