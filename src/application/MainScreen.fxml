@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PasswordManagerController">
+   <children>
+      <TableView fx:id="table" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="account" prefWidth="300.0" resizable="false" text="Account" />
+          <TableColumn fx:id="username" minWidth="0.0" prefWidth="300.0" resizable="false" text="Username" />
+            <TableColumn fx:id="password" maxWidth="1000.0" minWidth="0.0" prefWidth="300.0" resizable="false" text="Password" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
