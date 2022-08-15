@@ -16,10 +16,7 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			VBox root = loader.load(new FileInputStream("src/application/Scene1.fxml"));
 			PasswordManagerController controller =(PasswordManagerController) loader.getController();
-
-			controller.applicationStage = primaryStage;		
-
-
+			controller.applicationStage = primaryStage;	
 			Scene scene = new Scene(root,500,500);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
