@@ -47,6 +47,10 @@ public class AccountsFile {
 		}
 	}
 	
+	public  ArrayList<Account> getAccounts(){
+		return accounts;
+	}
+	
 	
 	
 	
@@ -57,15 +61,19 @@ public class AccountsFile {
 	
 	public static void main(String[] args) throws IOException, FileNotFoundException {
 		
+		//File created and read
+		AccountsFile file = new AccountsFile();
+		file.readFile();
 		 
-		 AccountsFile file = new AccountsFile();
-		 file.readFile();
-		 
-		 
-		//Account toAdd =  new Account( "Google", "user123", "asdasd");
-		//file.addAccount(toAdd);
-		 Account randomPass = new Account("TikTok", "cutekitty321", 8);
-		 file.addAccount(randomPass);
+		 /*
+		Account userSetPass =  new Account( "Google", "UserSetPass", "ISetThisPassword123");
+		Account randomPass = new Account("TikTok", "cutekitty321", 8);
+		file.addAccount(userSetPass);
+		file.addAccount(randomPass); */
+		
+		int indexToRemove = 0;
+		file.removeAccount(file.getAccounts().get(indexToRemove).getId()); 
+		
 		
 		 file.writeFile();
 	
