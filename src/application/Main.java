@@ -16,6 +16,8 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			AnchorPane root = loader.load(new FileInputStream("src/application/LoginScreen.fxml"));
 			PasswordManagerController controller =(PasswordManagerController) loader.getController();
+			controller.applicationStage = primaryStage;	
+			Scene scene = new Scene(root,500,500);
 
 			controller.applicationStage = primaryStage;		
 
