@@ -23,12 +23,14 @@ public class Account {
 	}
 	
 	// Constructor for random password
+	/*
 	public Account(String accountname, String username,int length){
 		this.id= java.util.UUID.randomUUID().toString();
 		this.accountname = new String(accountname);
 		this.username = new String(username);
 		this.password = generateRandomPassword(length);		
 	}
+	*/
 	
 	
 	public String getAccountname() {
@@ -62,23 +64,20 @@ public class Account {
 		this.id = id;
 	}
 	
-	public String generateRandomPassword(int length) {
-		String lowerCase = "qwertyuiopasdfghjklzxcvbnm";
-		String upperCase = lowerCase.toUpperCase();
-		String nums = "0123456789";
-		String specialChar = "!@#$%^&*()+-?";
-		String total = lowerCase + upperCase + nums + specialChar;
+	/*public String generateRandomPassword(int length) {
+		String chars = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789!@#$%^&*()+-?";
 		String password = "";
 
 		for (int i = 1; i <= length; i++) {
-			int random = (int) (Math.random()*total.length() + 1);
-			password += total.charAt(random);
+			int random = (int) (Math.random()*chars.length());			
+			password += chars.charAt(random);
 		}	
 				
-		return password;
+		return password; 
+		*/
 	}
 	
 	
 	
 
-}
+

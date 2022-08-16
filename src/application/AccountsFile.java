@@ -4,16 +4,12 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class AccountsFile {
-	private String fileName ;
 	private ArrayList<Account> accounts;
 	
-	//reads current passwords.csv file
-	public AccountsFile() throws IOException {
+	// Constructing Accounts File and Reading Current Values Stored
+	public AccountsFile(String fileName) throws IOException {
 		fileName = "accounts.csv";
 		accounts = new ArrayList<Account>();
-		}
-	
-	public void readFile() throws IOException {
 		BufferedReader in = new BufferedReader(new FileReader(fileName));
 		String line = in.readLine();
 		while(line != null) {
@@ -21,9 +17,10 @@ public class AccountsFile {
 			accounts.add(new Account(accountValues[0],accountValues[1], accountValues[2], accountValues[3]));
 			line = in.readLine(); }
 		in.close();
-	}
+		}
 	
-	public void writeFile() throws IOException {
+	
+	public void writeOut() throws IOException {
 		FileWriter accounts_csv = new FileWriter("accounts.csv");
 		PrintWriter out = new PrintWriter(accounts_csv);
 		
@@ -33,8 +30,9 @@ public class AccountsFile {
 		out.close();
 	}
 	
-	public void addAccount(Account accountToAdd){
+	public void addAccount(Account accountToAdd) throws IOException{
 		accounts.add(accountToAdd);
+		writeOut();
 	}
 	public void removeAccount(String guid) {
 		int index = 0;
@@ -61,21 +59,19 @@ public class AccountsFile {
 	
 	public static void main(String[] args) throws IOException, FileNotFoundException {
 		
+		AccountsFile file = new AccountsFile("accounts.csv");
+		Account A = new Account("Gmail", "UsernameABCD123", "Password123");
+		file.addAccount(A);
 		//File created and read
-		AccountsFile file = new AccountsFile();
-		file.readFile();
+
 		 
-		 /*
-		Account userSetPass =  new Account( "Google", "UserSetPass", "ISetThisPassword123");
-		Account randomPass = new Account("TikTok", "cutekitty321", 8);
-		file.addAccount(userSetPass);
-		file.addAccount(randomPass); */
-		
-		int indexToRemove = 0;
-		file.removeAccount(file.getAccounts().get(indexToRemove).getId()); 
+		 
 		
 		
-		 file.writeFile();
+
+
+
+		
 	
 	
 		
