@@ -10,15 +10,15 @@
    <children>
       <TableView fx:id="table" layoutY="94.0" maxHeight="260.0" maxWidth="700.0" minHeight="222.0" minWidth="700.0" prefHeight="222.0" prefWidth="700.0" style="-fx-background-color: #B2BEB5; -fx-border-color: #6ED9A0;" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <columns>
-            <TableColumn fx:id="id" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="ID" />
-          <TableColumn fx:id="account" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" text="Account" />
-          <TableColumn fx:id="username" maxWidth="175.0" minWidth="175.0" prefWidth="175.0" resizable="false" text="Username" />
+            <TableColumn fx:id="id" maxWidth="255.0" minWidth="255.0" prefWidth="255.0" text="ID" />
+          <TableColumn fx:id="account" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" resizable="false" text="Account" />
+          <TableColumn fx:id="username" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" resizable="false" text="Username" />
             <TableColumn fx:id="password" maxWidth="175.0" minWidth="175.0" prefWidth="175.0" resizable="false" text="Password" />
         </columns>
       </TableView>
       <Text fill="WHITE" layoutX="10.0" layoutY="277.94921875" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Details" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="265.0">
          <font>
-            <Font name="System Bold" size="12.0" />
+            <Font name="System Bold Italic" size="12.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="10.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="297.0">
@@ -94,6 +94,9 @@
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Text>
-      <Label fx:id="mainErrorLabel" layoutX="9.0" layoutY="450.0" text="Label" textFill="WHITE" />
+      <Label fx:id="mainErrorLabel" layoutX="13.0" layoutY="471.0" prefHeight="20.0" prefWidth="346.0" textAlignment="CENTER" textFill="#68bcd9">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
    </children>
 </AnchorPane>
