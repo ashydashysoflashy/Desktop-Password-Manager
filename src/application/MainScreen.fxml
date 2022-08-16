@@ -16,38 +16,38 @@
             <TableColumn fx:id="password" maxWidth="175.0" minWidth="175.0" prefWidth="175.0" resizable="false" text="Password" />
         </columns>
       </TableView>
-      <Text fill="WHITE" layoutX="10.0" layoutY="277.94921875" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Details" wrappingWidth="93.1171875" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="265.0">
+      <Text fill="WHITE" layoutX="10.0" layoutY="277.94921875" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Details" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="265.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="10.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="297.0">
          <font>
-            <Font name="System Italic" size="12.0" />
+            <Font size="12.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="10.0" layoutY="349.94921875" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" AnchorPane.bottomAnchor="147.0390625" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="339.0">
          <font>
-            <Font name="System Italic" size="12.0" />
+            <Font size="12.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="10.0" layoutY="389.94921875" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="381.0">
          <font>
-            <Font name="System Italic" size="12.0" />
+            <Font size="12.0" />
          </font>
       </Text>
       <TextField fx:id="accountInput" layoutX="70.0" layoutY="291.0" maxHeight="25.0" maxWidth="227.0" minHeight="25.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: transparent; -fx-border-color: #68bcd9; -fx-text-fill: #68bcd9;" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="294.0">
          <font>
             <Font size="12.0" />
          </font></TextField>
-      <Text fill="WHITE" layoutX="376.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Password" wrappingWidth="109.1171875" AnchorPane.leftAnchor="359.0" AnchorPane.topAnchor="265.0">
+      <Text fill="WHITE" layoutX="376.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Password" AnchorPane.leftAnchor="359.0" AnchorPane.topAnchor="265.0">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Text>
       <Text fill="WHITE" layoutX="379.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Length of Password" AnchorPane.leftAnchor="359.0" AnchorPane.topAnchor="293.0">
          <font>
-            <Font name="System Italic" size="12.0" />
+            <Font size="12.0" />
          </font>
       </Text>
       <TextField fx:id="usernameInput" layoutX="80.0" layoutY="301.0" maxHeight="25.0" maxWidth="227.0" minHeight="25.0" prefHeight="25.0" prefWidth="227.0" style="-fx-background-color: transparent; -fx-border-color: #68bcd9; -fx-text-fill: #68bcd9;" AnchorPane.topAnchor="336.0">
@@ -64,9 +64,9 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Text fill="WHITE" layoutX="363.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Account" wrappingWidth="109.1171875" AnchorPane.leftAnchor="363.0" AnchorPane.topAnchor="383.05078125">
+      <Text fill="WHITE" layoutX="361.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Account" AnchorPane.leftAnchor="359.0" AnchorPane.topAnchor="382.0">
          <font>
-            <Font name="System Bold Italic" size="12.0" />
+            <Font size="12.0" />
          </font>
       </Text>
       <Button layoutX="602.0" layoutY="291.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#randomPassword" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #6ED9A0;" text="Generate" textFill="WHITE" AnchorPane.leftAnchor="608.0">
@@ -74,20 +74,26 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="364.0" layoutY="420.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#removeAccount" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #6ED9A0;" text="Remove" textFill="WHITE" AnchorPane.leftAnchor="364.0" AnchorPane.topAnchor="420.0">
+      <Button layoutX="364.0" layoutY="420.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#removeAccount" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #6ED9A0;" text="Remove" textFill="WHITE" AnchorPane.leftAnchor="479.0" AnchorPane.topAnchor="379.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Text fill="WHITE" layoutX="545.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Account" wrappingWidth="109.1171875">
+      <Text fill="WHITE" layoutX="545.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Account" AnchorPane.leftAnchor="359.0" AnchorPane.topAnchor="422.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <Button layoutX="543.0" layoutY="420.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#editAccount" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #6ED9A0;" text="Edit" textFill="WHITE" AnchorPane.leftAnchor="479.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="357.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select account to either:" AnchorPane.leftAnchor="359.0" AnchorPane.topAnchor="350.0">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
       </Text>
-      <Button layoutX="543.0" layoutY="420.0" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#editAccount" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #6ED9A0;" text="Edit" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Button>
+      <Label fx:id="mainErrorLabel" layoutX="9.0" layoutY="450.0" text="Label" textFill="WHITE" />
    </children>
 </AnchorPane>
