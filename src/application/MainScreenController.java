@@ -169,6 +169,7 @@ public class MainScreenController implements Initializable {
 		} else if (passwordSpace) {
 			mainErrorLabel.setText("Do not include any whitespace characters in password.");
 		} else {
+			mainErrorLabel.setText("");
 			Account newAccount = new Account(account, user, password);
 			file.addAccount(newAccount);
 			table.setItems(getCurrentAccounts());

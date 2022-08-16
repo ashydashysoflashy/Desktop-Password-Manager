@@ -49,6 +49,7 @@ public class LoginScreenController {
 		String correctPassword = "CPSC233";
 
 		if (usernameEntered.getText().equals(correctUsername) && passwordEntered.getText().equals(correctPassword)) {
+			errorLabel.setText("");
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
 			root = loader.load();
 			stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
