@@ -91,19 +91,59 @@ public class MainScreenController implements Initializable {
 				
     }
    
+    @FXML
+    public void editAccount(ActionEvent event) throws IOException {
+    	AccountsFile file = new AccountsFile("accounts.csv");
+    	ObservableList<Account> allAccounts, singleAccount;
+    	allAccounts = table.getItems();
+    	singleAccount = table.getSelectionModel().getSelectedItems();
+    	
+    	accountInput.setText(singleAccount.get(0).getAccountname());
+    	usernameInput.setText(singleAccount.get(0).getUsername());
+    	passwordInput.setText(singleAccount.get(0).getPassword());
+    	
+    	for(Account n : allAccounts) {
+    		if(singleAccount.get(0).equals(n)) {
+    			file.removeAccount(n.getId());
+    			//allAccounts.remove(n);
+    		}
+    	}
+		table.setItems(getCurrentAccounts());		    		
+
+    	
+    }
+    @FXML
+    public void removeAccount(ActionEvent event) throws IOException {
+    	AccountsFile file = new AccountsFile("accounts.csv");
+    	ObservableList<Account> allAccounts, singleAccount;
+    	allAccounts = table.getItems();
+    	singleAccount = table.getSelectionModel().getSelectedItems();
+    	
+    	for(Account n : allAccounts) {
+    		if(singleAccount.get(0).equals(n)) {
+    			file.removeAccount(n.getId());
+    			//allAccounts.remove(n);
+    		}
+    	}
+		table.setItems(getCurrentAccounts());		    		
+    }
     
     @FXML
     public void addNewAccount(ActionEvent event) throws IOException {
+    
+    	
     	AccountsFile file = new AccountsFile("accounts.csv");
     	String account = accountInput.getText();
     	String user = usernameInput.getText();
     	String password = passwordInput.getText();
     	
-    	
-    	
+    	    	
     	Account newAccount = new Account(account,user,password); 
     	file.addAccount(newAccount);
     	
-		table.setItems(getCurrentAccounts());		    	
+		table.setItems(getCurrentAccounts());	
+		accountInput.clear();
+    	usernameInput.clear();
+    	passwordInput.clear();
     }
 }

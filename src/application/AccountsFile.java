@@ -34,7 +34,7 @@ public class AccountsFile {
 		accounts.add(accountToAdd);
 		writeOut();
 	}
-	public void removeAccount(String guid) {
+	public void removeAccount(String guid) throws IOException {
 		int index = 0;
 		for (Account n : accounts ) {
 			if (guid.equals(n.getId())) {
@@ -43,6 +43,8 @@ public class AccountsFile {
 			}		
 			index ++;
 		}
+		writeOut();
+
 	}
 	
 	public  ArrayList<Account> getAccounts(){
@@ -56,6 +58,7 @@ public class AccountsFile {
 	
 
 	
+	/*
 	
 	public static void main(String[] args) throws IOException, FileNotFoundException {
 		
@@ -63,19 +66,9 @@ public class AccountsFile {
 		Account A = new Account("Gmail", "UsernameABCD123", "Password123");
 		file.addAccount(A);
 		//File created and read
+	 }
 
+	 */
 		 
-		 
-		
-		
-
-
-
-		
-	
-	
-		
-			
-		
+				
 	}
-}
