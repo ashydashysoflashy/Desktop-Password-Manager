@@ -65,6 +65,8 @@ void switchMainScene(ActionEvent event) throws IOException {
 	
 	
 	if (usernameInput.equals("FinalProject") && passwordInput.equals("CPSC233")) {
+		final FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScreen.fxml"));
+		loader.setController(this);
 		Parent root = FXMLLoader.load(getClass().getResource("MainScreen.fxml"));
 		Scene mainScene = new Scene(root);
 		applicationStage.setScene(mainScene);
