@@ -74,9 +74,3 @@ void switchMainScene(ActionEvent event) throws IOException {
 	
 	}
 }
-
-
-
-
-
-

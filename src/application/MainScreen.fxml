@@ -14,5 +14,6 @@
             <TableColumn fx:id="password" maxWidth="1000.0" minWidth="0.0" prefWidth="300.0" resizable="false" text="Password" />
         </columns>
       </TableView>
+      <Label fx:id ="testlabel" text="Label" />
    </children>
 </AnchorPane>
